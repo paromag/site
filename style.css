@@ -1,0 +1,78 @@
+font-family: 'Open Sans', sans-serif;
+*{
+  margin: 0;
+
+  margin-top: 0;
+}
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:10px; /*делаем отступ сверху*/
+  background:#7e13bd; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#7e13bd; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+  background:#3f3f42;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+     
+    /*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none;   
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:250px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+.main{
+display: flex;
+justify-content: center;
+} 
+.welcome_txt{
+color: white;
+} 
+.about{
+  padding-top: 200px;
+  margin-left;
+}
+.aboutp{
+  color: white;
+}
+.dss{
+height: 500px;
+display: flex;
+position: absolute;
+right: 10px;
+top: 300px;
+} 
+.about1{
+  padding-top: 500px;
+  margin-left;
+}
+.mens{
+position: fixed;
+}
